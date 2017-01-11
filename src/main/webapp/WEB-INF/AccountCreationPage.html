@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="LoginPage.css">
+	<script src="./resources/jsFiles/loginPageValidations.js"></script>
+	
+		<title>AcountCreationPage</title>
+</head>
+<body>
+	<form action="./CreateAccountServlet" method="post">
+		<h1>
+			<center>Create your Bank Account</center>
+		</h1>
+
+		<table class="table table-bordered table-hover" border="2.0"
+			style="width: 30%" align="center">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name" required="required" type="text"/>
+			</tr>
+			<tr>
+				<td>User Name</td>
+				<td><input type="text" required="required" name="uname" />
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" required="required" name="password" />
+			</tr>
+			<tr>
+				<td>Balance</td>
+				<td><input class="input" maxlength="10" required="required" type="text" name="balance" autocomplete="off" />
+			</tr>
+			<tr>
+				<td><center>
+						<input type="submit" class="btn btn-info" value=SignUp></input>
+					</center></td>
+				<td><center>
+						<input type="reset" class="btn btn-danger" value=Clear></input>
+					</center></td>
+			</tr>
+		</table>
+	</form>
+	<h4 class="text-center"><a href="BankLoginPage.html">Don't want to create an account,click here to go back.</a></h4>
+</body>
+</html>
+
